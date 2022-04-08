@@ -1,0 +1,38 @@
+lsb_release -sc
+buster -> bullseye
+
+uname -a
+-> 5.10.103.. - 데비안 리눅스의 커널 버전
+-> armv7 - 32bit 보이스
+
+$ nproc
+cpu 코어수
+
+$htop
+운영사항 확인 (동적)
+
+$df -h
+$free -h
+운영사항 확인 (정적)
+
+
+라즈베리 파이
+$ pip(3) list
+-> 설치된 packs
+
+설치된 위치 = pi/home/pi/.local/lib/python3.7/site-packages
+
+쏘니 packs 설치된 위치
+C:\Users\Elec\AppData\Roaming\Python\Python37\site-packages
+
+import speech_recognition as sr 패키지를 간단하게 sr로 씀
+from gtts import gTTS gtts 패키지에서 gTTS 클래스를 사용
+import os // 라이브러리
+import time 
+import playsound // 패키지 import
+
+$ git clone 
+압축 없이 다운
+
+
+$ sudo apt install filezilla -y
