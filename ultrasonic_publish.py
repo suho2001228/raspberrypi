@@ -76,11 +76,11 @@ def publish(client: mqtt_client): # ppp
         time.sleep(1)
         distance = controlUltrasonic()      # 거리 측정
         msg = distance #f"messages: {distance}"
-        result = client.publish(topic, round(msg - dd, 1))
+        result = client.publish(topic, round(msg - dd, 1)) # 1초동안 이동한 거리를 계산
         # result: [0, 1]
         status = result[0]
         if status == 0:
-            print(f"Send `{msg}` cm  to topic `{topic}`")
+            print(f"Send `{msg}` cm  to topic `{topic}`") # 현재 초음파 센서와의 거리를 출력
             dd = msg
             time.sleep(1) 
         else:
