@@ -37,7 +37,7 @@ def connect_mqtt() -> mqtt_client:
 
 def subscribe(client: mqtt_client): # xxx
     def on_message(client, userdata, msg):
-        print(f"displacement = `{msg.payload.decode()}`")
+        print(f"displacement = `{msg.payload.decode()}`") # 이전거리와 현재거리의 차이를 계산하여 출력
     client.subscribe(topic) #1
     client.on_message = on_message
 
